@@ -1,0 +1,203 @@
+/* Для планшетов и небольших ноутбуков */
+@media (max-width: 992px) {
+    h1 {
+        font-size: 2.2rem;
+    }
+    
+    h2 {
+        font-size: 1.8rem;
+    }
+    
+    .container {
+        padding: 0 15px;
+    }
+    
+    .nav-menu {
+        flex-wrap: wrap;
+    }
+    
+    .nav-menu li {
+        margin: 0.3rem;
+    }
+    
+    .places-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    }
+}
+
+/* Для планшетов в портретной ориентации и больших смартфонов */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.6rem;
+    }
+    
+    header {
+        padding: 1.5rem 0;
+    }
+    
+    .nav-menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 0.5rem 0;
+    }
+    
+    .nav-menu li {
+        width: 100%;
+        text-align: center;
+        margin: 0.2rem 0;
+    }
+    
+    .nav-menu a {
+        justify-content: center;
+        padding: 0.8rem;
+    }
+    
+    main {
+        padding: 1.5rem 0;
+    }
+    
+    .types-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .places-container {
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+    
+    .contact-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    
+    .contact-form-container, .contact-info {
+        padding: 1.5rem;
+    }
+    
+    .comparison-table {
+        font-size: 0.9rem;
+    }
+    
+    .comparison-table th,
+    .comparison-table td {
+        padding: 0.7rem;
+    }
+    
+    .info-table {
+        font-size: 0.9rem;
+    }
+    
+    .info-table th,
+    .info-table td {
+        padding: 0.7rem;
+    }
+    
+    .recommendation-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Для смартфонов */
+@media (max-width: 576px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+    
+    h2 {
+        font-size: 1.4rem;
+    }
+    
+    h3 {
+        font-size: 1.2rem;
+    }
+    
+    header p {
+        font-size: 1rem;
+    }
+    
+    .container {
+        padding: 0 10px;
+    }
+    
+    .gallery-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .gallery-item img {
+        height: 200px;
+    }
+    
+    .benefits-list {
+        padding: 1rem;
+    }
+    
+    .type-card, .place-card {
+        padding: 1rem;
+    }
+    
+    .map-overlay {
+        position: relative;
+        background-color: white;
+    }
+    
+    .comparison-table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    .info-table {
+        display: block;
+        overflow-x: auto;
+    }
+    
+    footer .social-links {
+        gap: 1rem;
+    }
+    
+    footer .social-links a {
+        font-size: 1.3rem;
+    }
+    
+    .social-contact .social-links {
+        flex-direction: column;
+    }
+    
+    .social-contact .social-links a {
+        justify-content: center;
+    }
+}
+
+/* Для очень маленьких экранов */
+@media (max-width: 400px) {
+    h1 {
+        font-size: 1.6rem;
+    }
+    
+    h2 {
+        font-size: 1.3rem;
+    }
+    
+    .gallery-item figcaption {
+        font-size: 0.9rem;
+        padding: 0.8rem;
+    }
+    
+    .place-content {
+        padding: 1rem;
+    }
+    
+    .contact-form-container, .contact-info {
+        padding: 1rem;
+    }
+}
