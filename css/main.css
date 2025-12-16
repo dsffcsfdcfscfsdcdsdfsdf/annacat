@@ -1,0 +1,305 @@
+
+:root {  
+  --primary-color: #4a6fa5;          /* Определение основной цветовой переменной */
+  --secondary-color: #166088;        /* Определение вторичного цвета */
+  --accent-color: #db3a34;           /* Определение акцентного цвета */
+  --light-color: #f8f9fa;            /* Определение светлого цвета */
+  --dark-color: #343a40;             /* Определение темного цвета */
+  --gray-color: #6c757d;             /* Определение серого цвета */
+  --light-gray: #e9ecef;             /* Определение светло-серого цвета */
+  --success-color: #28a745;          /* Определение цвета успеха (зеленый) */
+  --warning-color: #ffc107;          /* Определение цвета предупреждения (желтый) */
+  --info-color: #17a2b8;             /* Определение цвета информации (голубой) */
+  --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Определение тени для элементов */
+  --border-radius: 8px;              /* Определение радиуса скругления углов */
+  --transition: all 0.3s ease;       /* Определение перехода для анимаций */
+}
+
+/* Сброс стандартных отступов */
+{  
+  margin: 0;                         /* Установка отступов снаружи в 0 */
+  padding: 0;                        /* Установка внутренних отступов в 0 */
+  box-sizing: border-box;            /* Включение модели расчёта размеров с учетом рамок и паддингов */
+}
+
+/* Основные стили */
+body {  
+  font-family: 'Open Sans', sans-serif; /* Задание основного шрифта для страницы */
+  line-height: 1.6;                     /* Высота строк для удобства чтения */
+  color: var(--dark-color);             /* Цвет текста из переменной */
+  background-color: #f5f7fa;            /* Цвет фона для всего сайта */
+}
+
+.container {  
+  width: 100%;                        /* Ширина контейнера на всю доступную ширину */
+  max-width: 1200px;                  /* Максимальная ширина контейнера */
+  margin: 0 auto;                    /* Центрирование контейнера по горизонтали */
+  padding: 0 20px;                   /* Внутренние отступы по бокам */
+}
+
+/* Заголовки */
+h1, h2, h3, h4 {  
+  font-family: 'Montserrat', sans-serif; /* Семейство шрифтов для заголовков */
+  font-weight: 600;                      /* Полужирное начертание */
+  margin-bottom: 1rem;                   /* Отступ снизу для разделения элементов */
+  color: var(--secondary-color);        /* Цвет заголовков из переменной */
+}
+
+h1 {  
+  font-size: 2.5rem;                    /* Размер шрифта для заголовка h1 */
+  font-weight: 700;                     /* Жирное начертание */
+}
+
+h2 {  
+  font-size: 2rem;                      /* Размер шрифта для заголовка h2 */
+  margin-top: 2rem;                     /* Отступ сверху перед элементом */
+  padding-bottom: 0.5rem;               /* Внутренний отступ снизу */
+  border-bottom: 2px solid var(--light-gray); /* Нижняя граница для визуального разделения */
+}
+
+h3 {  
+  font-size: 1.5rem;                    /* Размер шрифта для заголовка h3 */
+}
+
+.intro img {  
+  width: 100%;                     /* Ширина изображения на весь контейнер */
+  max-height: 400px;               /* Максимальная высота изображения */
+  object-fit: cover;               /* Обрезка изображения по контейнеру */
+  border-radius: var(--border-radius); /* Скругление углов изображения */
+  margin: 1.5rem 0;                /* Отступ сверху и снизу */
+  box-shadow: var(--shadow);       /* Тень для изображения */
+}
+
+/* Таблицы */
+.info-table, .comparison-table {  
+  width: 100%;                          /* Таблица занимает всю ширину контейнера */
+  border-collapse: collapse;            /* Убирает двойные границы */
+  margin: 1.5rem 0;                     /* Отступы сверху и снизу */
+  box-shadow: var(--shadow);             /* Тень для таблиц */
+  border-radius: var(--border-radius);  /* Скругление углов таблиц */
+  overflow: hidden;                     /* Обрезка содержимого, выходящего за рамки */
+}
+
+.info-table th, .comparison-table th {  
+  background-color: var(--primary-color); /* Фон заголовков таблиц */
+  color: white;                           /* Цвет текста в заголовках */
+  text-align: left;                      /* Выравнивание текста по левому краю */
+  padding: 1rem;                        /* Внутренние отступы в заголовках */
+}
+
+.info-table td, .comparison-table td {  
+  padding: 1rem;                        /* Внутренние отступы в ячейках */
+  border-bottom: 1px solid var(--light-gray); /* Нижняя граница между ячейками */
+}
+
+.info-table tr:nth-child(even), .comparison-table tr:nth-child(even) {  
+  background-color: var(--light-gray); /* Фоновый цвет для четных строк таблицы */
+}
+
+.info-table tr:hover, .comparison-table tr:hover {  
+  background-color: #e2e6ea;            /* Цвет строки при наведении */
+}
+
+/* Списки */
+.benefits-list {  
+  background-color: white;              /* Фон списка преимуществ */
+  padding: 1.5rem 2rem;                 /* Внутренние отступы */
+  border-radius: var(--border-radius); /* Скругленные углы */
+  box-shadow: var(--shadow);             /* Тень для списка */
+  margin: 1.5rem 0;                     /* Отступы сверху и снизу */
+}
+
+.benefits-list li {  
+  margin-bottom: 0.8rem;               /* Отступ между пунктами списка */
+  padding-left: 0.5rem;                /* Отступ слева для выравнивания */
+}
+
+/* Карточки */
+.types-grid {  
+  display: grid;                        /* Использование grid для сетки карточек */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Автоматический подгонка колонок */
+  gap: 2rem;                          /* Отступы между элементами сетки */
+  margin-top: 1.5rem;                 /* Отступ сверху */
+}
+
+.type-card {  
+  background-color: white;              /* Фон карточки */
+  padding: 1.5rem;                     /* Внутренние отступы */
+  border-radius: var(--border-radius); /* Скругление углов */
+  box-shadow: var(--shadow);             /* Тень для карточки */
+  transition: var(--transition);         /* Плавный переход для эффектов */
+}
+
+.type-card:hover {  
+  transf
+
+}
+
+p {  
+  margin-bottom: 1rem;                 /* Отступ снизу для абзацев */
+}
+
+/* Шапка */
+header {  
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color)); /* Градиентный фон */
+  color: white;                        /* Белый цвет текста */
+  padding: 2rem 0;                     /* Вертикальные отступы */
+  text-align: center;                  /* Центрирование текста */
+  box-shadow: var(--shadow);           /* Тень для шапки */
+}
+
+header h1 {  
+  color: white;                       /* Цвет заголовка в шапке белый */
+  margin-bottom: 0.5rem;              /* Отступ снизу */
+}
+
+header p {  
+  font-size: 1.2rem;                  /* Размер шрифта для параграфа в шапке */
+  opacity: 0.9;                      /* Нечеткая прозрачность текста */
+}
+
+/* Навигация */
+nav {  
+  background-color: white;            /* Белый фон навигации */
+  box-shadow: var(--shadow);           /* Тень для навигационной панели */
+  position: sticky;                   /* Прилипание навигации при прокрутке */
+  top: 0;                            /* Позиция липкого элемента сверху */
+  z-index: 1000;                     /* Высокий слой для перекрытия других элементов */
+}
+
+.nav-menu {  
+  display: flex;                     /* Горизонтальное расположение пунктов меню */
+  list-style: none;                  /* Убирает маркеры списков */
+  justify-content: center;           /* Центрирование пунктов меню */
+  padding: 1rem 0;                   /* Вертикальные отступы */
+}
+
+.nav-menu li {  
+  margin: 0 1rem;                   /* Отступы слева и справа между пунктами меню */
+}
+
+.nav-menu a {  
+  text-decoration: none;             /* Убирает подчеркивание ссылок */
+  color: var(--dark-color);          /* Цвет текста ссылки */
+  font-weight: 600;                  /* Полужирное начертание */
+  padding: 0.5rem 1rem;              /* Внутренние отступы для кликабельной области */
+  border-radius: var(--border-radius); /* Скругление углов */
+  transition: var(--transition);     /* Плавный переход при взаимодействии */
+  display: flex;                    /* Гибкое расположение содержимого ссылки */
+  align-items: center;              /* Вертикальное выравнивание элементов */
+  gap: 0.5rem;                     /* Отступ между иконкой и текстом */
+}
+
+.nav-menu a:hover {  
+  background-color: var(--light-gray); /* Изменение фона при наведении */
+  color: var(--primary-color);        /* Изменение цвета текста при наведении */
+}
+
+.nav-menu a.active {  
+  background-color: var(--primary-color); /* Фон активного пункта меню */
+  color: white;                        /* Цвет текста активного пункта */
+}
+
+/* Основное содержимое */
+main {  
+  padding: 2rem 0;                  /* Вертикальные отступы для основного блока */
+  min-height: 70vh;                 /* Минимальная высота основного содержимого */
+}
+
+/* Секции */
+section {  
+  margin-bottom: 3rem;             /* Отступ снизу между секциями */
+}
+
+.intro img {  
+  width: 100%;                     /* Ширина изображения на весь контейнер */
+  max-height: 400px;               /* Максимальная высота изображения */
+  object-fit: cover;               /* Обрезка изображения по контейнеру */
+  border-radius: var(--border-radius); /* Скругление углов изображения */
+  margin: 1.5rem 0;                /* Отступ сверху и снизу */
+  box-shadow: var(--shadow);       /* Тень для изображения */
+}
+
+/* Таблицы */
+.info-table, .comparison-table {  
+  width: 100%;                          /* Таблица занимает всю ширину контейнера */
+  border-collapse: collapse;            /* Убирает двойные границы */
+  margin: 1.5rem 0;                     /* Отступы сверху и снизу */
+  box-shadow: var(--shadow);             /* Тень для таблиц */
+  border-radius: var(--border-radius);  /* Скругление углов таблиц */
+  overflow: hidden;                     /* Обрезка содержимого, выходящего за рамки */
+}
+
+.info-table th, .comparison-table th {  
+  background-color: var(--primary-color); /* Фон заголовков таблиц */
+  color: white;                           /* Цвет текста в заголовках */
+  text-align: left;                      /* Выравнивание текста по левому краю */
+  padding: 1rem;                        /* Внутренние отступы в заголовках */
+}
+
+.info-table td, .comparison-table td {  
+  padding: 1rem;                        /* Внутренние отступы в ячейках */
+  border-bottom: 1px solid var(--light-gray); /* Нижняя граница между ячейками */
+}
+
+.info-table tr:nth-child(even), .comparison-table tr:nth-child(even) {  
+  background-color: var(--light-gray); /* Фоновый цвет для четных строк таблицы */
+}
+
+.info-table tr:hover, .comparison-table tr:hover {  
+  background-color: #e2e6ea;            /* Цвет строки при наведении */
+}
+
+/* Списки */
+.benefits-list {  
+  background-color: white;              /* Фон списка преимуществ */
+  padding: 1.5rem 2rem;                 /* Внутренние отступы */
+  border-radius: var(--border-radius); /* Скругленные углы */
+  box-shadow: var(--shadow);             /* Тень для списка */
+  margin: 1.5rem 0;                     /* Отступы сверху и снизу */
+}
+
+.benefits-list li {  
+  margin-bottom: 0.8rem;               /* Отступ между пунктами списка */
+  padding-left: 0.5rem;                /* Отступ слева для выравнивания */
+}
+
+/* Карточки */
+.types-grid {  
+  display: grid;                        /* Использование grid для сетки карточек */
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Автоматический подгонка колонок */
+  gap: 2rem;                          /* Отступы между элементами сетки */
+  margin-top: 1.5rem;                 /* Отступ сверху */
+}
+
+.type-card {  
+  background-color: white;              /* Фон карточки */
+  padding: 1.5rem;                     /* Внутренние отступы */
+  border-radius: var(--border-radius); /* Скругление углов */
+  box-shadow: var(--shadow);             /* Тень для карточки */
+  transition: var(--transition);         /* Плавный переход для эффектов */
+}
+
+.type-card:hover {  
+  transf
+orm: translateY(-5px);          /* Поднятие карточки вверх при наведении */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1); /* Усиление тени при наведении */
+}
+
+.type-card h3 {  
+  color: var(--primary-color);          /* Цвет заголовка карточки */
+  display: flex;                        /* Использование flex для выравнивания */
+  align-items: center;                 /* Вертикальное выравнивание */
+  gap: 0.5rem;                        /* Расстояние между элементами в заголовке */
+}
+
+/* Контейнер мест */
+.places-container {  
+  display: grid;                      /* Сетка для размещения блоков */
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Колонки с минимальной шириной 350px */
+  gap: 2rem;                        /* Отступы между элементами */
+  margin: 2rem 0;                   /* Отступы сверху и снизу */
+}
+
+
+
