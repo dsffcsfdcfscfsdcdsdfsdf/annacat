@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Гимнастика</title>
+    <link rel="stylesheet" href="C:\Users\User\Desktop\cамостоятельная\Новый текстовый документ (3).css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1><i class="fas fa-dumbbell"></i> Контакты</h1>
+            <p>Свяжитесь с нами для получения дополнительной информации</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul class="nav-menu">
+                <li><a href="C:\Users\User\Desktop\cамостоятельная\1 cтраница - главная\Новый текстовый документ.html"><i class="fas fa-home"></i> Главная</a></li>
+                <li><a href="C:\Users\User\Desktop\cамостоятельная\2 страница - места\Новый текстовый документ.html"><i class="fas fa-map-marker-alt"></i> Места для тренировок</a></li>
+                <li><a href="C:\Users\User\Desktop\cамостоятельная\3 страница - галлерея\Новый текстовый документ.html"><i class="fas fa-images"></i> Галерея</a></li>
+                <li><a href="contacts.html" class="active"><i class="fas fa-envelope"></i> Контакты</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section class="contact-intro">
+            <h2>Обратная связь</h2>
+            <p>Если у вас есть вопросы о гимнастике, вы хотите поделиться своим опытом или предложить сотрудничество, заполните форму ниже. Мы обязательно ответим вам в ближайшее время.</p>
+        </section>
+
+        <div class="contact-container">
+            <div class="contact-form-container">
+                <h3>Форма обратной связи</h3>
+                <form class="contact-form" action="#" method="post">
+                    <div class="form-group">
+                        <label for="name">Имя *</label>
+                        <input type="text" id="name" name="name" required placeholder="Введите ваше имя">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" name="email" required placeholder="Введите ваш email">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="subject">Тема сообщения</label>
+                        <select id="subject" name="subject">
+                            <option value="general">Общий вопрос</option>
+                            <option value="training">Вопрос по тренировкам</option>
+                            <option value="equipment">Оборудование для гимнастики</option>
+                            <option value="cooperation">Сотрудничество</option>
+                            <option value="feedback">Отзыв о сайте</option>
+                            <option value="other">Другое</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">Сообщение *</label>
+                        <textarea id="message" name="message" rows="5" required placeholder="Напишите ваше сообщение..."></textarea>
+                    </div>
+
+                    <div class="form-group">
+                        <button type="submit" class="submit-btn">Отправить сообщение</button>
+                    </div>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <h3>Контактная информация</h3>
+                <address>
+                    <p><i class="fas fa-map-marker-alt"></i> <strong>Адрес:</strong> г. Москва, ул. Спортивная, д. 15</p>
+                    <p><i class="fas fa-phone"></i> <strong>Телефон:</strong> +7 (495) 123-45-67</p>
+                    <p><i class="fas fa-envelope"></i> <strong>Email:</strong> info@gymnastics-hobby.ru</p>
+<p><i class="fas fa-clock"></i> <strong>Время работы:</strong> Пн-Пт: 9:00-18:00</p>
+                </address>
+
+                <div class="social-contact">
+                    <h4>Мы в социальных сетях</h4>
+                    <div class="social-links">
+                         <a href="https://vk.com/grufova"><i class="fab fa-vk"></i></a>
+                <a href="https://t.me/kasssspii"><i class="fab fa-telegram"></i></a>
+                    </div>
+                </div>
+
+                <div class="faq">
+                    <h4>Часто задаваемые вопросы</h4>
+                    <div class="faq-item">
+                        <p class="faq-question">С какого возраста можно начинать заниматься гимнастикой?</p>
+                        <p class="faq-answer">Оптимальный возраст для начала занятий - 4-6 лет, но начать можно в любом возрасте с соответствующим уровнем подготовки.</p>
+                    </div>
+                    <div class="faq-item">
+                        <p class="faq-question">Нужна ли специальная форма для занятий?</p>
+                        <p class="faq-answer">Да, для занятий гимнастикой рекомендуется специальная форма: купальник для девочек и шорты/майка для мальчиков.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="map-section">
+            <h3>Как нас найти</h3>
+            <div class="map-container">
+                <img src="images/map.jpg" alt="Карта с расположением офиса по адресу г. Москва, ул. Спортивная, д. 15">
+                <div class="map-overlay">
+                    <p>Мы находимся в центре города, недалеко от станции метро "Спортивная". Рядом расположены несколько парковок и кафе.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Мое хобби - Гимнастика. Все права защищены.</p>
+            <p>Сайт создан для демонстрации моего увлечения гимнастикой</p>
+            <div class="social-links">
+ <a href="https://vk.com/grufova"><i class="fab fa-vk"></i></a>
+                <a href="https://t.me/kasssspii"><i class="fab fa-telegram"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
